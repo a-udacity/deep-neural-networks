@@ -24,5 +24,16 @@ biases = [
 features = tf.Variable([[1.0, 2.0, 3.0, 4.0], [-1.0, -2.0, -3.0, -4.0], [11.0, 12.0, 13.0, 14.0]])
 
 # TODO: Create Model
+# output = tf.add(tf.matmul(features, weights), biases)
+# output = tf.nn.relu(output)
+
+hidden_layer = tf.add(tf.matmul(features, weights[0]), biases[0])
+hidden_layer = tf.nn.relu(hidden_layer)
+output = tf.add(tf.matmul(hidden_layer, weights[1]), biases[1])
 
 # TODO: Print session results
+with tf.Session() as sess:
+    # TODO: Feed in the logit data
+    sess.run(tf.initialize_all_variables())
+    print(output)
+

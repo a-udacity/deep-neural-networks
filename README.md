@@ -1,1 +1,1 @@
-# deep-neural-networks
+# Lesson deep-neural-networks quizzes
