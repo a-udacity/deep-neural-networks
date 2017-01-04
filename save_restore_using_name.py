@@ -10,7 +10,7 @@ bias = tf.Variable(tf.truncated_normal([3]), name='bias_0')
 
 saver = tf.train.Saver()
 
-# Print the name of Weights and Bias
+# Print the name of Weights and Biasgs
 print('Save Weights: {}'.format(weights.name))
 print('Save Bias: {}'.format(bias.name))
 
